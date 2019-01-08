@@ -134,6 +134,13 @@ client.on('ready', () => {
     }, 1000);
 });
 
+client.on('ready', () => {
+    var ex = client.guilds.get("439182014231347210");
+        setInterval({
+                ex.channels.get("531831434869080074).setName(`~ Members : ${ex.memberCount} .`);
+        }, 1000);
+});
+
 client.on('message', msg => {
 	
   if (msg.author.bot) return;
